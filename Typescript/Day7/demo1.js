@@ -1,0 +1,21 @@
+var a = [2, 3, 4, 5, 6];
+//map funct. = if u want element by element perform any task or logic in that we use map function
+var res = a.map(function (myvalue) {
+    return (myvalue * myvalue);
+});
+// console.log("original array "+a);
+// console.log("result is "+res);
+//rest paramter function
+function display() {
+    var item = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        item[_i] = arguments[_i];
+    }
+    for (var i = 0; i < item.length; i++) {
+        console.log("\n       Item value is " + item[i] + "\n       ");
+    }
+}
+// display(20,30);
+// display(30,31,32,34,45,56);
+var a1 = [12, 'Angular8', true, 2.3, 3, 'Active'];
+console.log(a1);
