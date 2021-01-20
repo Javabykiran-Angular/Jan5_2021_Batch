@@ -1,0 +1,24 @@
+<p>property-binding works!</p>
+<!-- it binds your dynamic property .It bind ur HTML/custom Attributes -->
+<!-- syntax is [attribute]="Property_name" -->
+
+<input type="text" [value]="name" >
+<br><br>
+<img [src]="imgurl" alt="">
+<hr>
+<h2>Difference Between String Interpolation vs Property Binding</h2>
+
+<div hidden="{{ishidden}}">
+   <h2>Binding Using String Interpolation</h2> 
+</div>
+<br><br>
+<div [hidden]="ishidden">
+    <h2>Binding Using Property Binding......</h2> 
+</div>
+<br>
+
+<button [disabled]="ishidden_btn">Click me</button>
+<br><br><br><br>
+
+
+
