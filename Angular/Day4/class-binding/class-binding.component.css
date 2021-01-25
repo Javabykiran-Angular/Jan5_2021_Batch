@@ -1,0 +1,20 @@
+.success{
+    color: greenyellow;
+}
+.warning{
+    color: goldenrod;
+}
+.danger{
+    color: red;
+}
+
+.on{
+    color: royalblue;
+}
+.off{
+    color: chocolate;
+}
+.special{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}

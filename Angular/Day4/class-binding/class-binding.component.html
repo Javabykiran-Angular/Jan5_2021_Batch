@@ -1,0 +1,9 @@
+<p>class-binding works!</p>
+
+<h1 [class]="myclass"> Class Binding </h1>
+<h2 [class.on]="rating<4"
+    [class.off]="rating>4"
+>Apply Class Binding Another Way</h2>
+<hr>
+<!-- ngClass => Directive -->
+<h2 [ngClass]="obj"> Apply ngClass  </h2>

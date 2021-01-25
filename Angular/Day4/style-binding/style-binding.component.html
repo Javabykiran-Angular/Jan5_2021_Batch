@@ -1,0 +1,14 @@
+<p>style-binding works!</p>
+
+<!-- syntax => [style_propertyName]="Property_Name" -->
+
+<h1 [style.color]="mycolor">Style Binding</h1>
+<h2 [style.color]="rating<4?'red':'green'">Apply Style Binding On Condition</h2>
+<h2 [style.color]="rating1<4?mycolor1:mycolor2"> Apply Style Binding</h2>
+<hr>
+<h1>Apply more than one CSS Property Using Style Binding</h1>
+<!-- ngStyle Directive  -->
+
+<div [ngStyle]="obj">
+    Apply NgStyle 
+</div>
