@@ -1,0 +1,42 @@
+<p>event-binding2 works!</p>
+
+<!-- keyup & keydown -->
+<input type="text" (keyup)="onKeyUp()"
+placeholder="Enter the Username"> <br><br>
+
+<input type="text" (keydown)="onKeyDown()"
+ placeholder="Enter the Username"> <br><br>
+
+ <hr>
+ <button (click)="result=3+3">Addition</button><br>
+ <h2> {{result}} </h2>
+<input #num1 type="number" 
+placeholder="Enter the Number">
+<br> <button (click)="result1=num1.value*num1.value">
+    Square</button> <br>
+    {{result1}}
+<hr>
+<input type="text" #name
+ placeholder="Please Enter ur name">
+ <br>
+ <img src="../../assets/winlogo.jpg" 
+ alt="" (click)="myname=name.value">
+ <br>
+ <div>
+    <h2>{{myname}}</h2> 
+ </div>
+ <hr>
+
+ <input type="text" [(ngModel)]="username" 
+ placeholder="Enter the Username">
+<br>
+{{username}}
+<hr>
+
+
+ <br><br><br><br><br><br><br><br><br><br>
+ <br><br><br><br><br>
+ <!-- angulat.io -->
+
+
+
