@@ -1,0 +1,66 @@
+<p>fordirective works!</p>
+
+<ul>
+    <li>Angular 8</li>
+    <li>React Js</li>
+    <li>Vue js</li>
+    <li>Embber JS</li>
+    <li>JSP</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let item of course">
+         {{item}} </li>
+</ul>
+<hr>
+<ol>    
+    <li
+     *ngFor="let item1 of ['Angular 8','React Js','Vue js','Embber Js','JSP']">
+    {{item1}}
+    </li>
+</ol>
+<hr>
+<table border="1px">
+    <thead>
+        <th>Sr No</th>
+        <th> Product Name </th>
+        <th> Description </th>
+        <th> Price </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.description}} </td>
+            <td> {{item.price}} </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Mouse over Event & Mouse out Event</h2>
+<table border="1px">
+    <thead>
+        <th>Sr No</th>
+        <th> Product Name </th>
+        <th> Description </th>
+        <th> Price </th>
+    </thead>
+    <tbody>
+        <tr 
+        *ngFor="let item of arrobj;index as i"
+        (mouseover)="onMouseOver(item)"
+        [ngClass]="{
+            'highlight':selected==item.name
+        }"
+        (mouseout)="onMouseOut()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.description}} </td>
+            <td> {{item.price}} </td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
