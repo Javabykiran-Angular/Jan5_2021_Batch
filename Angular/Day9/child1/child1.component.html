@@ -1,0 +1,22 @@
+<p>child1 works!</p>
+
+<h2> {{DataFromParent}} </h2>
+
+<h2> {{ParaentJson.fname}} </h2>
+<h2> {{ParaentJson.id}} </h2>
+<h2> {{ParaentJson.status}} </h2>
+
+<table border="1px">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Status</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of ParentArrObj">
+            <td> {{item.id}} </td>
+            <td> {{item.fname}} </td>
+            <td> {{item.status}} </td>
+        </tr>
+    </tbody>
+</table>
