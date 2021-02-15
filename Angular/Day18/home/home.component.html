@@ -1,0 +1,16 @@
+<p>home works!</p>
+
+<!-- <a href="/Page1">PAGE1</a> -->
+<a routerLink="/Page1">PAGE1</a>
+<a [routerLink]="['/Page2',myid]">PAGE2</a>
+<a [routerLink]="['/Page3',myid,myusername]">PAGE3</a>
+<a routerLink="/Follower">FOLLOWER</a>
+<a routerLink="/QueryParam" [queryParams]="myobj">QUERYPARAM</a>
+<a routerLink="/TDF">Template Driven Form</a>
+<hr>
+
+<button (click)="onPage1()">Page1</button>
+<button (click)="onPage2()">Page2</button>
+<button (click)="onPage3()">Page3</button>
+<button (click)="onFollower()">Follower</button>
+<button (click)="onQueryParam()">QueryParam</button>
