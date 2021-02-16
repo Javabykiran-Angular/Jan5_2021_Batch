@@ -1,0 +1,50 @@
+
+
+<div class="container-fluid">
+    <p>tdf works!</p>
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+        <form #f="ngForm">
+            {{f.value | json}}
+            <div class="form-group">
+                <label for="">Username:: </label>
+                <input type="text" placeholder="Enter the Username"
+                class="form-control" ngModel name="username1"
+                #username="ngModel" required
+                minlength="4"
+                pattern="sumit"
+                >
+                <div class="alert alert-danger" *ngIf="username.touched && username.invalid">
+                    ** Please Enter the Username 
+                    <div *ngIf="username.errors.minlength">
+                        ** Please Enter Minimum length is {{username.errors.minlength.requiredLength}}
+                    </div>
+                    <div *ngIf="username.errors.pattern"> ** Pelase Enter Appropriate pattern
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="">Comment</label>
+                <textarea ngModel name="comment" class="form-control"
+                #comment="ngModel"  cols="30" rows="5" required></textarea>
+
+                <div class="alert alert-danger" *ngIf="comment.touched && !comment.valid">
+                    ** Please Enter the Comment
+
+                </div>
+
+            </div>
+            <br><br>
+            <button class="btn btn-success" [disabled]="!f.valid">Send</button>
+
+        </form>
+       
+    </div>
+
+</div>
+
+</div>
