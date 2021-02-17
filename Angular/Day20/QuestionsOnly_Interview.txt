@@ -1,0 +1,37 @@
+1. Why were client-side frameworks like Angular introduced?
+2. How does an Angular application work/Application Flow?
+3. What are some of the advantages of Angular over other frameworks?
+4. List out differences between AngularJS(MVC) and Angular(MVV/MVW)
+
+AOT-Ahead of compiler (Explore)
+
+5 what is difference between property binding vs string interpolation
+[] vs {{}}
+6 how data flows in propety/string Interpolation/style/class binding
+7 how data flows in event binding
+8 which event you are using in your project
+click,change,mouseover/mouseout,focus
+keyup,keydown,custom event-component intraction
+9 what is component interation?
+10 how we achieve to send data?
+11 what is mean by service & use/role
+12 have you used Http services/consume API in Angular?
+13 which module you are imported for Http services?
+14 what is use of @injectable?
+15 What is mean By DI & how we can achieve DI
+16 what is use of observable?
+17 For Observable which lib is used?
+18 What is mean by routing? what is use of router-outlet tag?
+19 Are you aware about Angular Material?
+20 have you used 3rd party services/notification?
+21 What is use of enterypoint component?
+22 Have you use custom Pipe? How we can implement custom pipe?
+23 Can you enlist inbuild pipe?
+24 What is Two way Binding & what is preqreuesting for two way binding to implement?
+25 Can we send data from one component to another component? how we can Achieve it?
+26 How we can use angular material in our project?
+27 
+
+
+
+
